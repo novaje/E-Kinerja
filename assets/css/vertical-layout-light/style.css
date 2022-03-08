@@ -13649,6 +13649,12 @@ fieldset:disabled .swal2-modal .swal2-buttonswrapper .swal2-styled,
 }
 
 .breadcrumb {
+    border: 1px solid #f4f5f7;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.breadcrumb {
   display: flex;
   flex-wrap: wrap;
   padding: 0.56rem 1.13rem;
@@ -22324,7 +22330,9 @@ code {
 
 /* Breadcrumbs */
 .breadcrumb {
-  border: 1px solid #dee2e6;
+  border: 1px solid #f4f5f7;
+  border-radius: 20px;
+  background: #fff;
 }
 
 .breadcrumb .breadcrumb-item {
@@ -29115,12 +29123,18 @@ div.tagsinput span.tag a {
   margin-top: 0;
   list-style: none;
   padding: 0.25rem 0 0 3.07rem;
-  background: #fff;
+  /*background: #fff;*/
   padding-bottom: 12px;
 }
 
 .sidebar .nav.sub-menu .nav-item {
   padding: 0;
+}
+
+.oke-primary {
+    font-size: 14px;
+    line-height: 12px;
+    padding: 10px;
 }
 
 .sidebar .nav.sub-menu .nav-item::before {
