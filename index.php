@@ -73,9 +73,9 @@
 <script type="text/javascript">
     if (window?.location?.href?.indexOf('SignInsuccess') > -1) {
         Swal.fire({
-            title: 'Sign In Success!',
+            title: 'Berhasil Sign In!',
             icon: 'success',
-            text: 'Selamat Datang di Aplikasi E-Kinerja!',
+            text: 'Selamat Datang di Aplikasi E-Kinerja RSUD Drs. H. Amri Tambunan!',
         })
         history.replaceState({}, '', './index.php');
     }

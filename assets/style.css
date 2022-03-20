@@ -1,0 +1,38 @@
+/*NAVBAR*/
+.navbar .navbar-brand-wrapper {
+    background: #1f3bb3;
+    transition: width 0.25s ease, background 0.25s ease;
+    -webkit-transition: width 0.25s ease, background 0.25s ease;
+    -moz-transition: width 0.25s ease, background 0.25s ease;
+    -ms-transition: width 0.25s ease, background 0.25s ease;
+    width: 220px;
+    height: 97px;
+    padding: 20px 35px;
+}
+
+.navbar .navbar-brand-wrapper .navbar-brand {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-right: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.navbar .navbar-brand-wrapper .navbar-toggler {
+    border: 0;
+    color: inherit;
+    font-size: 1rem;
+    padding: 0;
+    border-radius: 0;
+    color: white;
+}
+
+/*SIDEBAR*/
+/*main-panel*/
+.content-wrapper {
+    background: #ffffff;
+    padding: 1.5rem 2.187rem 1.5rem 3.5rem;
+    width: 100%;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+}

@@ -166,30 +166,43 @@
 </div>
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
 	<ul class="nav">
-		<li class="nav-item nav-category">General Section</li>
+		<li class="nav-item nav-category">General</li>
 		<li class="nav-item">
 			<a class="nav-link" href="index.php">
 				<i class="mdi mdi-grid-large menu-icon"></i>
 				<span class="menu-title">Dashboard</span>
 			</a>
 		</li>
-		<li class="nav-item nav-category">Administrator Section</li>
+		<!-- /* LIST MENU SESUAI ROLE/HAK AKSES */ -->
+		<?php
+		if ($access['role'] == 'Super Admin') { 
+			include 'menu/Unit/menu.php';
+			include 'menu/Ruangan/menu.php';
+			include 'menu/Manajemen/menu.php';
+		} else if ($access['role'] == 'Bagian SDM') { 
+			include 'menu/Manajemen/menu.php';
+		} else if ($access['role'] == 'Kepala Instalasi') { 
+			include 'menu/Unit/menu.php';
+		} else if ($access['role'] == 'Kepala Ruangan') { 
+			include 'menu/Ruangan/menu.php';
+		} else if ($access['role'] == 'Perawat') { 
+			include 'menu/Ruangan/menu.php';
+		} else if ($access['role'] == 'Pegawai') { 
+			include 'menu/Manajemen/menu.php';
+		} 
+		?>
+		<!-- /* END LIST MENU SESUAI ROLE/HAK AKSES */ -->
+		<li class="nav-item nav-category">Log</li>
 		<li class="nav-item">
-			<a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-				<i class="menu-icon mdi mdi-account-circle-outline"></i>
-				<span class="menu-title">Kepegawaian</span>
-				<i class="menu-arrow"></i>
+			<a class="nav-link" href="log_histori.php">
+				<i class="menu-icon fas fa-history"></i>
+				<span class="menu-title">Log Histori</span>
 			</a>
-			<div class="collapse" id="auth">
-				<ul class="nav flex-column sub-menu">
-					<li class="nav-item"> <a class="nav-link" href="adm_pengguna.php"> Pengguna </a></li>
-				</ul>
-			</div>
 		</li>
-		<li class="nav-item nav-category">Tentang</li>
+		<li class="nav-item nav-category">Tentang Aplikasi</li>
 		<li class="nav-item">
 			<a class="nav-link" href="#">
-				<i class="menu-icon mdi mdi-file-document"></i>
+				<i class="menu-icon fas fa-hand-holding-medical"></i>
 				<span class="menu-title">Bantuan</span>
 			</a>
 		</li>

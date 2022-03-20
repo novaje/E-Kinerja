@@ -16,13 +16,13 @@
 						<div class="row">
 							<div class="col-lg-12">
 								<h3 class="page-header">
-									<i class="fa fa-user-circle icon-title"></i> Kepegawaian
+									<i class="fa fa-user-circle icon-title"></i>&nbsp; SDM
 								</h3>
 								<nav aria-label="breadcrumb" role="navigation" style="margin-top: -25px;">
 									<ol class="breadcrumb">
 										<li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
-										<li class="breadcrumb-item" aria-current="page">Kepegawaian</li>
-										<li class="breadcrumb-item active" aria-current="page">Pengguna</li>
+										<li class="breadcrumb-item" aria-current="page">SDM</li>
+										<li class="breadcrumb-item active" aria-current="page">Nama Pegawai</li>
 									</ol>
 								</nav>
 							</div>
@@ -38,11 +38,10 @@
 						<div class="card-body">
 							<div class="d-sm-flex justify-content-between align-items-start">
 								<div>
-									<h4 class="card-title card-title-dash">Data Pengguna</h4>
-									<p class="card-subtitle card-subtitle-dash">Total Pengguna</p>
+									<h4 class="card-title card-title-dash">Data Pegawai</h4>
 								</div>
 								<div>
-									<!-- Tambah Data Pengguna -->
+									<!-- Tambah Data Pegawai -->
 									<a href="adm_pengguna_add.php" target="_blank" class="btn btn-primary oke-primary" title="Tambah Pengguna">
 										<i class="fa fa-user-plus"></i> 
 									</a>
@@ -79,12 +78,22 @@
 
 												if ($row['role'] == 'Super Admin') {
 													$sRole = "<div class='badge badge-opacity-danger'>Super Admin</div>";
-												} else if ($row['role'] == 'Admin') {
-													$sRole = "<div class='badge badge-opacity-info'>Admin</div>";
-												} else if ($row['role'] == 'Pegawai') {
-													$sRole = "<div class='badge badge-opacity-success'>Pegawai</div>";
-												} else if ($row['role'] == 'Tamu') {
-													$sRole = "<div class='badge badge-opacity-success'>Tamu</div>";
+												} else if ($row['role'] == 'Bagian SDM') {
+													$sRole = "<div class='badge badge-opacity-info'>Bagian SDM</div>";
+												} else if ($row['role'] == 'Kepala Instalasi') {
+													$sRole = "<div class='badge badge-opacity-success'>Kepala Instalasi</div>";
+												} else if ($row['role'] == 'Radiologi') {
+													$sRole = "<div class='badge badge-opacity-info'>Radiologi</div>";
+												} else if ($row['role'] == 'Farmasi') {
+													$srole = "<div class='badge badge-opacity-success'>Farmasi</div>";
+												} else if ($row['role'] == 'Sakura A') {
+													$srole = "<div class='badge badge-opacity-info'>Sakura A</div>";
+												} else if ($row['role'] == 'Mawar A') {
+													$srole = "<div class='badge badge-opacity-success'>Mawar A</div>";
+												} else if ($row['role'] == 'Mawar B') {
+													$srole = "<div class='badge badge-opacity-info'>Mawar B</div>";
+												} else if ($row['role'] == 'Anggrek') {
+													$srole = "<div class='badge badge-opacity-success'>Anggrek</div>";
 												}
 
 												$no++;
@@ -118,7 +127,7 @@
 															 <h6>Tgl Masuk: " . $row['join_tgl'] . "</h6>
 														 </div>
 													 </td>";       
-												echo "<td style='text-align: center;'>" . $sRole . "</td>";  
+												echo "<td style='text-align: center;'>" . $sRole . "</td>";
 												echo "<td style='text-align: justify;'>
 														 <div>
 															 <h6>No. HP: " . $row['no_hp'] . "</h6>

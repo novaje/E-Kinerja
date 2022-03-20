@@ -3,15 +3,18 @@ include "include/connection.php";
 if (isset($_SESSION['newuser'])) {
   header("Location: ./index.php");
 } 
-
 if (isset($_POST['submit'])) {
   $user =$_POST['username'];
   $pass =$_POST['password'];
   $log_type = "signin";
   $date_log = date('Y-m-d H:i:m');
 
-  $q = mysql_query("SELECT * FROM tb_users WHERE username='$user' AND password ='$pass'");
-
+  $q = mysql_query("SELECT * 
+                    FROM tb_users AS user
+                    JOIN tb_pegawai AS pegawai ON user.username=pegawai.NIP
+                    WHERE pegawai.status='0'
+                    AND user.username='$user'
+                    AND user.password='$pass'");
   if (mysql_num_rows($q) == 1) {
     session_start();
     $_SESSION['username']=$user;
@@ -39,7 +42,7 @@ if (isset($_POST['submit'])) {
   <link rel="stylesheet" href="assets/vendors/simple-line-icons/css/simple-line-icons.css">
   <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
   <link rel="stylesheet" href="assets/css/vertical-layout-light/style.css">
-  <link rel="shortcut icon" href="assets/images/favicon.png" />
+  <link rel="shortcut icon" href="assets/images/rss.png" />
   <!-- Alert -->
   <script src="assets/sweet/sweetalert2.all.js"></script>
   <script src="assets/sweet/sweetalert2.all.min.js"></script>
@@ -66,7 +69,7 @@ if (isset($_POST['submit'])) {
                 <img src="assets/images/logo/rs.png" alt="logo">
               </div>
               <h4>Aplikasi E-Kinerja <font style="font-size: 10px;font-weight:600">RSUD Drs. H. Amri Tambunan</font></h4>
-              <font class="fw-light" style="font-size: 12px;top:-10px">Silahkan sign in untuk memulai session.</font>
+              <font class="fw-light" style="font-size: 12px;top:-10px">Silahkan sign in.</font>
               <form class="pt-3" method="post" action="">
                 <div class="form-group">
                   <input type="text" class="form-control form-control-lg" id="exampleInputEmail1" name="username" placeholder="Username" required>
@@ -117,18 +120,18 @@ if (isset($_POST['submit'])) {
   <script type="text/javascript">
     if (window?.location?.href?.indexOf('error') > -1) {
       Swal.fire({
-        title: 'Sign In Failed!',
+        title: 'Gagal Sign In!',
         icon: 'error',
-        text: 'Wrong username or password. Try again or contact Administrator!',
+        text: 'Username atau password anda salah! Periksa kembali atau hubungungi Administrator!',
       })
       history.replaceState({}, '', './signin.php');
     }
 
     if (window?.location?.href?.indexOf('errorAccess') > -1) {
       Swal.fire({
-        title: 'Access Failed!',
+        title: 'Tidak Ada Akses!',
         icon: 'error',
-        text: 'Please contact your administrator!',
+        text: 'hubungungi Administrator!',
       })
       history.replaceState({}, '', './signin.php');
     }

@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="assets/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
     <link rel="stylesheet" href="assets/js/select.dataTables.min.css">
     <link rel="stylesheet" href="assets/css/vertical-layout-light/style.css">
-    <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <link rel="shortcut icon" href="assets/images/rss.png" />
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/style.css">
     <script src="https://kit.fontawesome.com/bd33a9775b.js" crossorigin="anonymous"></script>
     <!-- Alert -->
     <script src="assets/sweet/sweetalert2.all.js"></script>
