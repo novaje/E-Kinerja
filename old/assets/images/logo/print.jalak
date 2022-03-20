@@ -1,0 +1,63 @@
+                                   Daftar Matakuliah D4 Teknik Informatika (14)                                   
+                                         Kurikulum: 2021, Kurikulum 2021                                          
+------------------------------------------------------------------------------------------------------------------
+No.   Sesi  Kode      Nama                                         SKS  Wjb  Prasyarat
+------------------------------------------------------------------------------------------------------------------
+1     1     PPI01010  PENDIDIKAN AGAMA                             2         
+2     1     PPI01020  PENDIDIKAN PANCASILA                         2         
+3     1     PPI01040  BAHASA INDONESIA                             2         
+4     1     PPI02060  BAHASA INGGRIS 1                             2         
+5     1     TI41011   MATEMATIKA DISKRIT                           2         
+6     1     TI41061   ALGORITMA DAN STRUKTUR DATA I                3         
+7     1     TI41071   PEMOGRAMAN I                                 3         
+8     1     TI42011   LITERASI TEKNOLOGI                           3         
+9     2     PPI01030  PENDIDIKAN KEWARGANEGARAAN                   2         
+10    2     PPI02070  BAHASA INGGRIS 2                             3         
+11    2     TI41092   ALJABAR LINIER                               2         
+12    2     TI41112   LITERASI DATA                                3         
+13    2     TI41122   ALGORITMA DAN STRUKTUR DATA 2                3         
+14    2     TI43132   BASIS DATA I                                 4         
+15    2     TI43162   PROYEK TI I                                  4         
+16    2     TI44152   PENGANTAR LOGISTIK DAN SCM                   2         
+17    3     PPI02080  BAHASA INGGRIS 3                             2         
+18    3     TI41173   REKAYASA PERANGKAT LUNAK I                   3         
+19    3     TI41183   PEMROGRAMAN II                               4         
+20    3     TI41223   DESAIN INTERAKSI                             2         
+21    3     TI43193   BASIS DATA II                                4         
+22    3     TI43203   JARINGAN KOMPUTER                            3         
+23    3     TI43213   METODOLOGI PENELITIAN                        2         
+24    3     TI43233   PROYEK TI II                                 4         
+25    4     TI41254   REKAYASA PERANGKAT LUNAK II                  3         
+26    4     TI41264   PROGRAMMING III (WEBSERVICE)                 4         
+27    4     TI41314   ETIKA DAN MANAJEMEN PROFESI IT               2         
+28    4     TI43274   ADMINISTRASI JARINGAN KOMPUTER               3         
+29    4     TI43284   MANAJEMEN PROYEK                             2         
+30    4     TI43294   MANAJEMEN DISTRIBUSI                         2         
+31    4     TI43304   CYBERPRENEURSHIP                             2         
+32    4     TI43324   SISTEM ERP 1                                 3         
+33    4     TI43334   BISNIS MANAGEMENT                            2         
+34    5     TI41345   PEMROGRAMAN IV                               4         
+35    5     TI42355   KEAMANAN JARINGAN                            3         
+36    5     TI42365   KEAMANAN SISTEM INFORMASI                    3         
+37    5     TI43375   SISTEM INFORMASI GEOGRAFIS                   3         
+38    5     TI43385   SUPPLY CHAIN MANAGEMENT                      2         
+39    5     TI43395   SISTEM ERP 2                                 3         
+40    5     TI43405   PROYEK TI III                                4         
+41    6     PPI02090  BAHASA INGGRIS 4                             3         
+42    6     TI41426   SISTEM MULTIMEDIA                            3         
+43    6     TI43436   DATA MINING                                  3         
+44    6     TI43446   SISTEM TERSEBAR                              3         
+45    6     TI43456   STATISTIK PROBABILITAS                       2         
+46    6     TI43466   KECERDASAN BUATAN                            3         
+47    6     TI43476   SISTEM PAKAR                                 3         
+48    6     TI43487   KAPITA SELEKTA                               2         
+49    7     T4I611C4  INTERNSHIP I                                 4         
+50    8     TI43508   INTERNSHIP II                                4         
+                                   Daftar Matakuliah D4 Teknik Informatika (14)                                   
+                                         Kurikulum: 2021, Kurikulum 2021                                          
+------------------------------------------------------------------------------------------------------------------
+No.   Sesi  Kode      Nama                                         SKS  Wjb  Prasyarat
+------------------------------------------------------------------------------------------------------------------
+51    8     TI43518   TUGAS AKHIR/FINAL PROJECT                    4         
+------------------------------------------------------------------------------------------------------------------
+                                                           Total : 145  
